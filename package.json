@@ -1,0 +1,21 @@
+{
+    "name": "nightfox",
+    "displayName": "Nightfox",
+    "description": "Nightfox Theme for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Nightfox",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Nightfox-color-theme.json"
+            }
+        ]
+    }
+}
