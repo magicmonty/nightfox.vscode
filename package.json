@@ -2,6 +2,7 @@
     "name": "nightfox",
     "displayName": "Nightfox",
     "description": "Nightfox Theme for VS Code",
+    "repository": "https://github.com/magicmonty/nightfox.vscode",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.62.0"
