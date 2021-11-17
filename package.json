@@ -1,40 +1,54 @@
 {
-    "name": "nightfox",
-    "displayName": "Nightfox Theme",
-    "description": "Nightfox Theme for VS Code",
-    "publisher": "pagansoft",
-    "author": {
-        "name": "Martin Gondermann",
-        "email": "magicmonty@pagansoft.de",
-        "url": "https://github.com/magicmonty"
-    },
-    "homepage": "https://github.com/magicmonty/nightfox.vscode",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/magicmonty/nightfox.vscode"
-    },
-    "license": "MIT",
-    "version": "0.0.2",
-    "engines": {
-        "vscode": "^1.62.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Nightfox",
-                "uiTheme": "vs-dark",
-                "path": "./themes/nightfox-color-theme.json"
-            }
-        ]
-    },
-    "scripts": {
-        "clean": "del *.vsix",
-        "package": "vsce package"
-    },
-    "devDependencies": {
-        "vsce": "^2.3.0"
-    }
+  "name": "nightfox",
+  "displayName": "Nightfox Theme",
+  "description": "Nightfox Theme for VS Code",
+  "publisher": "pagansoft",
+  "author": {
+    "name": "Martin Gondermann",
+    "email": "magicmonty@pagansoft.de",
+    "url": "https://github.com/magicmonty"
+  },
+  "homepage": "https://github.com/magicmonty/nightfox.vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magicmonty/nightfox.vscode"
+  },
+  "license": "MIT",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.62.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Nightfox",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nightfox-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint **/*.json",
+    "clean": "del *.vsix",
+    "package": "vsce package",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "prettier": "^2.4.1",
+    "vsce": "^2.3.0"
+  },
+  "dependencies": {
+    "husky": "^7.0.4"
+  }
 }
