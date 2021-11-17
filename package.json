@@ -1,9 +1,20 @@
 {
     "name": "nightfox",
-    "displayName": "Nightfox",
+    "displayName": "Nightfox Theme",
     "description": "Nightfox Theme for VS Code",
-    "repository": "https://github.com/magicmonty/nightfox.vscode",
-    "version": "0.0.1",
+    "publisher": "pagansoft",
+    "author": {
+        "name": "Martin Gondermann",
+        "email": "magicmonty@pagansoft.de",
+        "url": "https://github.com/magicmonty"
+    },
+    "homepage": "https://github.com/magicmonty/nightfox.vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magicmonty/nightfox.vscode"
+    },
+    "license": "MIT",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.62.0"
     },
@@ -15,8 +26,15 @@
             {
                 "label": "Nightfox",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Nightfox-color-theme.json"
+                "path": "./themes/nightfox-color-theme.json"
             }
         ]
+    },
+    "scripts": {
+        "clean": "del *.vsix",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "vsce": "^2.3.0"
     }
 }
