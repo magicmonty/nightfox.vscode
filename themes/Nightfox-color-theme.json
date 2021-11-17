@@ -1006,7 +1006,7 @@
         "foreground": "#ffffff"
       }
     },
-    {2
+    {
       "name": "Deprecated",
       "scope": "invalid.deprecated",
       "settings": {
